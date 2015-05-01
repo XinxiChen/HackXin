@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University/School Laboratory Report
+% LaTeX Template
+% Version 3.1 (25/3/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{ COMP 3314 / CSIS 0314\\ Machine Learning \\ Assignment 4} % Title
+
+\author{QIAN Xin, CHEN Xinxi} % Author name
+
+\date{\today} % Date for the report
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+\begin{tabular}{l r}
+Due Date: & May 5, 2015, 11:30 pm \\ % Date the experiment was performed
+Instructor: & Jack Wang, Lu Shirui % Instructor/supervisor
+\end{tabular}
+\end{center}
+
+% If you wish to include an abstract, uncomment the lines below
+% \begin{abstract}
+% Abstract text
+% \end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+At a high-level, what are the approaches you considered and why?
+
+
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Method}
+
+Describe the approach you chose. For example, how did you preprocess the
+data and what algorithms did you implement/use?
+
+To use the libsvm library, the data format should be double. Therefore, we preprocess the data using 
+I2 = im2double(I) converts the intensity image I to double precision, rescaling the data if necessary. I can be a grayscale intensity image, a truecolor image, or a binary image.
+If the input image is of class double, then the output image is identical.
+
+You may find it in ToDouble.
+
+Many options in using LIBSVM
+
+If n is small and m is intermediate, then use SVM with a Gaussian Kernel.
+
+
+
+
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+
+\section{Results}
+
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+
+\section{Conclusions}
+
+Summarize what you’ve learned from the experiments and speculate on how you might improve the performance.
+
+What makes your result good, and why? and/or,
+What makes your result unsatisfying, why, and how to improve?
+
+\clearpage
+
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\section{Reference}
+References to any publically available code you used or writings you drew ideas from.
+\clearpage
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
