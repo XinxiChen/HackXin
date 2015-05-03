@@ -5,9 +5,8 @@ CIFAR_DIR='';
 %% Configuration
 addpath minFunc;
 rfSize = 6;
-numCentroids=1600;
+numCentroids=2000;
 whitening=true;
-numPatches = 400000;
 CIFAR_DIM=[32 32 3];
 
 %% Load CIFAR test data
@@ -17,7 +16,7 @@ testX = double(f1.data_test);
 clear f1;
 
 %% Load model
-f2=load([CIFAR_DIR '/kmeans_model1.mat']);
+f2=load([CIFAR_DIR '/kmeans_model0503_3.mat']);
 centroids = f2.centroids; 
 M = f2.M; 
 P = f2.P; 
@@ -31,17 +30,16 @@ if (whitening)
 else
   testXC = extract_features(testX, centroids, rfSize, CIFAR_DIM);
 end
+
 testXCs = bsxfun(@rdivide, bsxfun(@minus, testXC, trainXC_mean), trainXC_sd);
 testXCs = [testXCs, ones(size(testXCs,1),1)];
 
 % test and print result
 [val,labels] = max(testXCs*theta, [], 2);
-%data1 = ['id';'label'];
-%celldata = cellstr(data);
 labels1 = labels - 1;
 headers = {'id';'label'};
 A = linspace(1,1200,1200);
 data2 = [A',labels1];
 %csvwrite_with_headers('prediction.csv',data2,headers);
-csvwrite_with_headers('prediction.csv',data2,headers);
+csvwrite_with_headers('prediction0503_3.csv',data2,headers);
 
