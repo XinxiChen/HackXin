@@ -1,0 +1,8 @@
+This is the wrap-up for 68.00% accuracy.
+process: kmeans_demo2.m => kmeans_model1.mat  
+Time: around 30 mins
+
+Simply for prediction:
+load kmeans_model1.mat, which is ready to use for run_prediction.m. 
+
+Should get answer within 10mins.

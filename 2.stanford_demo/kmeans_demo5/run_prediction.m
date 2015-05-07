@@ -16,13 +16,8 @@ testX = double(f1.data_test);
 clear f1;
 
 %% Load model
-f2=load([CIFAR_DIR '/kmeans_model_2nd_train.mat']);
-centroids = f2.centroids; 
-M = f2.M; 
-P = f2.P; 
-trainXC_mean = f2.trainXC_mean;
-trainXC_sd = f2.trainXC_sd;
-theta = f2.theta;
+
+load kmeans_model_2nd_train_C10.mat;
 
 % compute testing features and standardize
 if (whitening)

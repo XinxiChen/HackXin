@@ -14,7 +14,7 @@ numCentroids=5000; %number of features, i.e. K in K-means
 
 whitening=true; %whitening needed
 
-numPatches = 5000000; 
+numPatches = 6000000; 
 
 CIFAR_DIM=[32 32 3]; %data set dimension
 

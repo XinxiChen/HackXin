@@ -1,0 +1,5 @@
+A smaller C means faster training convergence on SVM and less overfitting.
+
+c=100 1000+ iterations;
+c=10 600+ iterations;
+c=1 270 iterations  255 for the latest model
