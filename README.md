@@ -1,6 +1,6 @@
 ### Kaggle in Class, Tiny Image Classification, CIFAR-10
 
-Group project for HKU COMP3314_CSIS0314(Spring 2015), attacking a real world machine learning problem of classifying tiny images from a subset of CIFAR-10.  
+Group project for HKU COMP3314_CSIS0314(Spring 2015), attacking a real world machine learning problem of classifying tiny images from a subset of CIFAR-10. Our result ranks top 1 among all groups. 
 
 
 ![cifar10](cifar10.png)  
@@ -9,7 +9,7 @@ For more details, please click on the [Kaggle page](https://inclass.kaggle.com/c
 
 More on our methods and results, please refer to Final Report.   
 
-Find us on the Leader Board. Cheers@!  
+Find us on the Leader Board. Cheers!  
 
 ![LeaderBoard](LeaderBoard.png)  
 
